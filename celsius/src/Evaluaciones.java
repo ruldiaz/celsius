@@ -11,8 +11,11 @@ public class Evaluaciones {
         while(nota != -1){
             System.out.println("Escribe la nota para Matrix");
             nota = scanner.nextDouble();
-            mediaEvaluaciones += nota;
-            totalEvaluaciones++;
+            if(nota != -1){
+                mediaEvaluaciones += nota;
+                totalEvaluaciones++;
+            }
+
         }
         System.out.println("La media de evaluaciones es: " + mediaEvaluaciones/totalEvaluaciones);
     }
