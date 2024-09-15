@@ -31,8 +31,9 @@ public class Desafio {
 
         // si opcion es 9 salir
         while (menuOpcion != 9){
-            System.out.println(menu);
-            menuOpcion = scanner.nextInt();
+            System.out.println(menu); // imprime menu en pantalla
+            menuOpcion = scanner.nextInt(); // lee opcion desde el teclado
+
             if(menuOpcion == 1){
                 System.out.println("El saldo actualizado es: " + " " + saldoDisponible);
             }
