@@ -10,6 +10,7 @@ public class Desafio {
         double depositos = 0;
         int menuOpcion = 0;
 
+        // texto de bienvenida, pantalla
         String bienvenida = """
                 ******************************
                 Nombre del cliente: %s
@@ -17,6 +18,7 @@ public class Desafio {
                 Saldo disponible: %f
                 ******************************
                 """.formatted(nombreCliente, tipoCuenta, saldoDisponible);
+        // menu
         String menu = """
                 ** Escriba el número de la opción deseada **
                 1 - Consultar saldo
