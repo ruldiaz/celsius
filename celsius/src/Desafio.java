@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 public class Desafio {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); // variable para registrar entradas desde el teclado
         String nombreCliente = "Tony Stark";
         String tipoCuenta = "Corriente";
         double saldoDisponible = 0;
         double retiros = 0;
         double depositos = 0;
-        int menuOpcion = 0;
+        int menuOpcion = 0; // variable para opciones de menú
 
         // texto de bienvenida, pantalla
         String bienvenida = """
