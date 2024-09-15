@@ -55,6 +55,9 @@ public class Desafio {
                     System.out.println("Cantidad depositada: " + " " + depositos);
                     saldoDisponible += depositos;
                     break;
+                case 9:
+                    System.out.println("Saliendo del programa. Gracias por utilizar nuestros servicios.");
+                    break;
                 default:
                     System.out.println("Opción no válida.");
                     break;
