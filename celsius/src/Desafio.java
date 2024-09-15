@@ -9,6 +9,7 @@ public class Desafio {
         double retiros = 0;
         double depositos = 0;
         int menuOpcion = 0;
+
         String bienvenida = """
                 ******************************
                 Nombre del cliente: %s
@@ -25,7 +26,7 @@ public class Desafio {
                 """;
         System.out.println(bienvenida);
 
-
+        // si opcion es 9 salir
         while (menuOpcion != 9){
             System.out.println(menu);
             menuOpcion = scanner.nextInt();
