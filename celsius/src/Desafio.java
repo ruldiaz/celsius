@@ -33,6 +33,7 @@ public class Desafio {
             if(menuOpcion == 1){
                 System.out.println("El saldo actualizado es: " + " " + saldoDisponible);
             }
+            // retiros
             if(menuOpcion == 2){
                 System.out.println("¿Cuanto deseas retirar?");
                 retiros = scanner.nextDouble();
@@ -43,6 +44,7 @@ public class Desafio {
                     System.out.println("Saldo insuficiente");
                 }
             }
+            // depositos
             if(menuOpcion == 3){
                 System.out.println("¿Cuanto deseas depositar?");
                 depositos = scanner.nextDouble();
