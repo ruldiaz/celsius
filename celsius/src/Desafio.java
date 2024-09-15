@@ -26,6 +26,7 @@ public class Desafio {
                 3 - Depositar
                 9 - Salir
                 """;
+        // mostrar la pantalla de bienvenida al inicio
         System.out.println(bienvenida);
 
         // si opcion es 9 salir
