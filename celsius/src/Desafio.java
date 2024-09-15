@@ -33,7 +33,7 @@ public class Desafio {
         while (menuOpcion != 9){
             System.out.println(menu); // imprime menu en pantalla
             menuOpcion = scanner.nextInt(); // lee opcion desde el teclado
-
+        // metodo switch para controlar menu
             switch( menuOpcion){
                 case 1:
                     System.out.println("El saldo actualizado es: " + " " + saldoDisponible);
@@ -44,6 +44,7 @@ public class Desafio {
                     if(saldoDisponible >= retiros){
                         System.out.println("Cantidad retirada: " + " " + retiros);
                         saldoDisponible -= retiros;
+                        System.out.println("El saldo actualizado es: " + " " + saldoDisponible);
                     }else {
                         System.out.println("Saldo insuficiente");
                     }
@@ -53,6 +54,9 @@ public class Desafio {
                     depositos = scanner.nextDouble();
                     System.out.println("Cantidad depositada: " + " " + depositos);
                     saldoDisponible += depositos;
+                    break;
+                default:
+                    System.out.println("Opción no válida.");
                     break;
             }
 
