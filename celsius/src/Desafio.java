@@ -34,27 +34,28 @@ public class Desafio {
             System.out.println(menu); // imprime menu en pantalla
             menuOpcion = scanner.nextInt(); // lee opcion desde el teclado
 
-            if(menuOpcion == 1){
-                System.out.println("El saldo actualizado es: " + " " + saldoDisponible);
+            switch( menuOpcion){
+                case 1:
+                    System.out.println("El saldo actualizado es: " + " " + saldoDisponible);
+                    break;
+                case 2:
+                    System.out.println("¿Cuanto deseas retirar?");
+                    retiros = scanner.nextDouble();
+                    if(saldoDisponible >= retiros){
+                        System.out.println("Cantidad retirada: " + " " + retiros);
+                        saldoDisponible -= retiros;
+                    }else {
+                        System.out.println("Saldo insuficiente");
+                    }
+                    break;
+                case 3:
+                    System.out.println("¿Cuanto deseas depositar?");
+                    depositos = scanner.nextDouble();
+                    System.out.println("Cantidad depositada: " + " " + depositos);
+                    saldoDisponible += depositos;
+                    break;
             }
-            // retiros
-            if(menuOpcion == 2){
-                System.out.println("¿Cuanto deseas retirar?");
-                retiros = scanner.nextDouble();
-                if(saldoDisponible >= retiros){
-                    System.out.println("Cantidad retirada: " + " " + retiros);
-                    saldoDisponible -= retiros;
-                }else {
-                    System.out.println("Saldo insuficiente");
-                }
-            }
-            // depositos
-            if(menuOpcion == 3){
-                System.out.println("¿Cuanto deseas depositar?");
-                depositos = scanner.nextDouble();
-                System.out.println("Cantidad depositada: " + " " + depositos);
-                saldoDisponible += depositos;
-            }
+
         }
     }
 }
